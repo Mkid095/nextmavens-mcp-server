@@ -12,7 +12,7 @@ export class DatabaseTools {
   }
 
   private buildUrl(table: string, filters: any[] = [], limit?: number, offset?: number, orderBy?: any): string {
-    let url = `${this.apiUrl}/${table}`;
+    let url = `${this.apiUrl}/api/${table}`;
     const params: string[] = [];
 
     // Build filters
@@ -126,7 +126,7 @@ export class DatabaseTools {
     const { table, data } = args;
 
     try {
-      const response = await fetch(`${this.apiUrl}/${table}`, {
+      const response = await fetch(`${this.apiUrl}/api/${table}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

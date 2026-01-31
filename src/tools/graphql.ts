@@ -15,7 +15,7 @@ export class GraphQLTools {
     const { query, variables = {} } = args;
 
     try {
-      const response = await fetch(this.graphqlUrl, {
+      const response = await fetch(`${this.graphqlUrl}/graphql`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -133,7 +133,7 @@ export class GraphQLTools {
     `;
 
     try {
-      const response = await fetch(this.graphqlUrl, {
+      const response = await fetch(`${this.graphqlUrl}/graphql`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -21,9 +21,9 @@ import { GraphQLTools } from './tools/graphql.js';
 // Get API key from environment
 const API_KEY = process.env.NEXTMAVENS_API_KEY || process.env.NEXTMAVENS_PUBLIC_KEY;
 const API_URL = process.env.NEXTMAVENS_API_URL || 'https://api.nextmavens.cloud';
-const AUTH_URL = process.env.NEXTMAVENS_AUTH_URL || 'https://auth.nextmavens.cloud';
-const GRAPHQL_URL = process.env.NEXTMAVENS_GRAPHQL_URL || 'https://graphql.nextmavens.cloud';
-const STORAGE_URL = process.env.NEXTMAVENS_STORAGE_URL || 'https://telegram.nextmavens.cloud';
+const AUTH_URL = process.env.NEXTMAVENS_AUTH_URL || 'https://api.nextmavens.cloud';
+const GRAPHQL_URL = process.env.NEXTMAVENS_GRAPHQL_URL || 'https://api.nextmavens.cloud';
+const STORAGE_URL = process.env.NEXTMAVENS_STORAGE_URL || 'https://telegram-api.nextmavens.cloud';
 
 // Validate configuration
 if (!API_KEY) {
