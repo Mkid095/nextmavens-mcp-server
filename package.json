@@ -1,5 +1,5 @@
 {
-  "name": "@nextmavens/mcp-server",
+  "name": "@nextmavenspacks/mcp-server",
   "version": "1.0.0",
   "description": "NextMavens MCP Server - AI/IDE integration for NextMavens platform",
   "type": "module",
